@@ -29,3 +29,17 @@ def test_data_retrieval():
     
     table = model.get_table("Age")
     assert table.size, "Failed to retrieve the 'Age' table."
+
+def test_table_names_method():
+    """Test the new table_names method returns a Python list."""
+    model = PBIXRay(PBIX_FILE_PATH)
+    
+    # Test the new table_names method
+    table_names = model.table_names()
+    assert isinstance(table_names, list), "table_names() should return a Python list."
+    assert len(table_names) > 0, "table_names() should return a non-empty list."
+    assert "Age" in table_names, "Expected table 'Age' not found in table_names list."
+    
+    # Verify it returns the same content as tables property but as a list
+    tables_array = model.tables
+    assert set(table_names) == set(tables_array), "table_names() should contain the same tables as tables property."

@@ -29,6 +29,20 @@ To list all tables in the model:
 tables = model.tables
 print(tables)
 ```
+### Table Names as List
+To get table names as a simple Python list (convenient for iteration and membership testing):
+```python
+table_names = model.table_names()
+print(table_names)  # Returns: ['Table1', 'Table2', 'Table3']
+
+# Easy iteration
+for table in model.table_names():
+    print(f"Processing table: {table}")
+
+# Quick membership testing
+if 'MyTable' in model.table_names():
+    print("MyTable exists!")
+```
 ### Metadata
 To get metadata about the Power BI configuration used during model creation:
 ```python

@@ -25,6 +25,10 @@ class PBIXRay:
     def tables(self):
         return self._metadata_handler.tables
     
+    def table_names(self):
+        """Returns a simple Python list of all table names in the model."""
+        return self.tables.tolist()
+    
     @property
     def statistics(self):
         return self._metadata_handler.stats
