@@ -49,6 +49,30 @@ To get metadata about the Power BI configuration used during model creation:
 metadata = model.metadata
 print(metadata)
 ```
+### Export Metadata as JSON
+To export all metadata to JSON format for external processing or archival:
+```python
+# Export metadata as JSON string
+json_string = model.export_metadata_json()
+print(json_string)
+
+# Export metadata to JSON file
+model.export_metadata_json('metadata_export.json')
+
+# Export metadata including table data (warning: can create large files)
+model.export_metadata_json('full_export.json', include_table_data=True)
+```
+
+The JSON export includes:
+- Model information (size, table count, table names)
+- General metadata and configuration
+- Schema information
+- Statistics
+- Relationships
+- Power Query expressions and parameters
+- DAX tables, measures, and calculated columns
+- Optionally: actual table data
+
 ### Power Query
 To display all M/Power Query code used for data transformation, in a dataframe with `TableName` and `Expression` columns:
 ```python
