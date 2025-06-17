@@ -1,0 +1,17 @@
+[theme]
+# Primary theme configuration
+primaryColor = "#ff6b6b"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#fafafa"
+
+# Set dark theme as default
+base = "dark"
+
+[server]
+# Enable file watching for development
+fileWatcherType = "auto"
+
+[browser]
+# Automatically open browser when starting
+gatherUsageStats = false
