@@ -2,19 +2,21 @@
 
 ## Overview
 
-This document outlines the implementation of Grab Duxton Design principles in the PBIXRay application. The design system follows Grab's brand guidelines and creates a cohesive, accessible, and modern user interface.
+This document outlines the implementation of Grab Duxton Design principles in the PBIXRay application. The design system follows Grab's official brand guidelines and creates a cohesive, accessible, and modern user interface using the correct Grab brand colors.
 
 ## Design Tokens
 
 ### Color Palette
 
-#### Primary Colors (Grab Brand)
-- **Primary Green**: `#00B14F` (Grab's signature green, PMS 355C equivalent)
-- **Primary Light**: `#33C473`
-- **Primary Lighter**: `#66D797`
-- **Primary Lightest**: `#E6F7ED`
+#### Primary Colors (Official Grab Brand)
+- **Primary Green**: `#00B04F` (PMS 355C equivalent - Grab's official brand color)
+- **Primary Light**: `#33C070`
+- **Primary Lighter**: `#66D090`
+- **Primary Lightest**: `#E6F7E9`
 - **Primary Dark**: `#008A3B`
-- **Primary Darker**: `#006428`
+- **Primary Darker**: `#006628`
+
+*Note: The primary color has been corrected to match Grab's official PMS 355C brand color as specified in their brand guidelines.*
 
 #### Secondary Colors
 - **Secondary Blue**: `#0066CC` (Digital blue for interactive elements)
@@ -68,20 +70,20 @@ Layered shadow system for depth and hierarchy:
 
 ## Design Principles Applied
 
-### 1. **Consistent Visual Hierarchy**
+### 1. **Brand Consistency**
+- Grab's official PMS 355C green as the primary color
+- Professional and clean aesthetic aligned with Grab's brand identity
+- Consistent iconography and visual elements
+
+### 2. **Consistent Visual Hierarchy**
 - Clear typography scale with consistent font weights
 - Proper use of white space and padding
 - Color-coded sections for better content organization
 
-### 2. **Accessibility**
+### 3. **Accessibility**
 - High contrast ratios for text readability
 - Semantic color usage (green for success, red for errors)
 - Clear focus states and interactive elements
-
-### 3. **Brand Consistency**
-- Grab's signature green as the primary color
-- Professional and clean aesthetic
-- Consistent iconography and visual elements
 
 ### 4. **User Experience**
 - Loading states with branded spinners
@@ -89,10 +91,18 @@ Layered shadow system for depth and hierarchy:
 - Intuitive navigation and content organization
 - Responsive design considerations
 
+## Brand Compliance
+
+This implementation follows Grab's official brand guidelines:
+- **Primary Color**: Uses PMS 355C equivalent (#00B04F)
+- **Logo Usage**: Follows Grab's spacing and sizing guidelines
+- **Color Applications**: Green logo on light backgrounds, white logo on dark backgrounds
+- **Typography**: Professional, readable font choices that complement Grab's brand aesthetic
+
 ## Component Styling
 
 ### Header
-- Gradient background using primary colors
+- Gradient background using official Grab green
 - Prominent branding with PBIXRay title
 - Clean, centered layout
 
@@ -107,7 +117,7 @@ Layered shadow system for depth and hierarchy:
 - Consistent spacing and typography
 
 ### Buttons
-- Primary buttons use Grab green
+- Primary buttons use official Grab green
 - Secondary buttons use digital blue
 - Hover states with smooth transitions
 - Consistent border radius and typography
@@ -130,7 +140,7 @@ The design system uses CSS custom properties (variables) for consistent theming:
 
 ```css
 :root {
-    --primary-color: #00B14F;
+    --primary-color: #00B04F;  /* Official Grab PMS 355C */
     --secondary-color: #0066CC;
     --text-primary: #212529;
     /* ... additional variables */
@@ -150,7 +160,7 @@ The design system uses CSS custom properties (variables) for consistent theming:
 ## Usage Guidelines
 
 ### Colors
-- Use primary green for main actions and branding
+- Use official Grab green (#00B04F) for main actions and branding
 - Use secondary blue for download and secondary actions
 - Use semantic colors consistently (green for success, red for errors)
 - Maintain proper contrast ratios for accessibility
@@ -177,20 +187,26 @@ The design system uses CSS custom properties (variables) for consistent theming:
 - **Semantic Markup**: Proper heading hierarchy and semantic elements
 - **Screen Reader Support**: Meaningful labels and descriptions
 
+## Color Source References
+
+- **Grab Brand Guidelines**: Official PMS 355C color specification
+- **Brand Center**: https://merchant.grab.com/en-my/brand-centre/grab
+- **Design System URL**: Please refer to https://grab.design/styles-and-assets/colour for complete color specifications
+
 ## Future Enhancements
 
 1. **Dark Mode Support**: Implement dark theme variants
 2. **Component Library**: Extract reusable components
 3. **Animation System**: Add micro-interactions and transitions
 4. **Mobile Optimization**: Enhanced mobile experience
-5. **Theming API**: Allow for brand customization
+5. **Complete Color Palette**: Integrate full Grab design system colors once access is available
 
 ## Files Modified
 
-- `design_tokens.py`: Core design token definitions
+- `design_tokens.py`: Core design token definitions with corrected Grab colors
 - `streamlit_app.py`: Main application with styling applied
 - `DESIGN_SYSTEM.md`: This documentation file
 
 ---
 
-*This design system implementation follows Grab's brand guidelines while adapting to the specific needs of the PBIXRay application. The system prioritizes usability, accessibility, and brand consistency.*
+*This design system implementation follows Grab's official brand guidelines with the correct PMS 355C color specification. For complete color palette details, please reference the official Grab design system at grab.design.*

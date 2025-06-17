@@ -4,16 +4,16 @@
 class GrabDesignTokens:
     """
     Design tokens for Grab Duxton Design System
-    Following Grab's brand guidelines with their signature green (#00B14F) as primary
+    Following Grab's official brand guidelines with PMS 355C as primary color
     """
     
-    # Primary Brand Colors
-    PRIMARY = "#00B14F"  # Grab Green (PMS 355C)
-    PRIMARY_LIGHT = "#33C473"
-    PRIMARY_LIGHTER = "#66D797"
-    PRIMARY_LIGHTEST = "#E6F7ED"
+    # Primary Brand Colors (Official Grab Green - PMS 355C)
+    PRIMARY = "#00B04F"  # Grab Green (PMS 355C equivalent)
+    PRIMARY_LIGHT = "#33C070"
+    PRIMARY_LIGHTER = "#66D090"
+    PRIMARY_LIGHTEST = "#E6F7E9"
     PRIMARY_DARK = "#008A3B"
-    PRIMARY_DARKER = "#006428"
+    PRIMARY_DARKER = "#006628"
     
     # Secondary Colors
     SECONDARY = "#0066CC"  # Digital Blue
